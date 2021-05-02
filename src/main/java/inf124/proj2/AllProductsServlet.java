@@ -38,7 +38,7 @@ public class AllProductsServlet extends HttpServlet {
                         "<div class = \"container\">\n" +
                             "<div class = \"navbar\">\n" +
                                 "<div class = \"logo\">\n" +
-                                    "<img src  = \"/images/ciarteagLogo.png\" width = \"190 px\" >\n" +
+                                    "<img src  = \"localhost:8181/images/ciarteagLogo.png\" width = \"190 px\" >\n" +
                                 "</div>\n" +
                                 "<nav>\n" +
                                    "<ul id=\"MenuItems\">\n" +
@@ -47,35 +47,35 @@ public class AllProductsServlet extends HttpServlet {
                                         "<li> <a href = \"/about.html\"> About </a> </li>\n" +
                                    "</ul>\n" +
                                 "</nav>\n" +
-                                "<a href = \"/cart.html\" > <img src =\"/images/cart.png\" width = \"30px\" height = \"30px\"></a>\n" +
-                                "<img src =\"/images/menu.png\" class = \"menu-symbol\" onclick=\"menutoggle()\" >\n" +
+                                "<a href = \"/cart.html\" > <img src =\"localhost:8181/images/cart.png\" width = \"30px\" height = \"30px\"></a>\n" +
+                                "<img src =\"localhost:8181/images/menu.png\" class = \"menu-symbol\" onclick=\"menutoggle()\" >\n" +
 
                             "</div>\n" +
                         "</div>");
 
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql:// localhost:3306/"
-                    +  "demo", "root", "3593");
-            Statement stmt = con.createStatement();
-            String sql = "SELECT name, email FROM emails";
-            ResultSet rs = stmt.executeQuery(sql);
+//        try{
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//            Connection con = DriverManager.getConnection("jdbc:mysql:// localhost:3306/"
+//                    +  "demo", "root", "3593");
+//            Statement stmt = con.createStatement();
+////            String sql = "SELECT name, email FROM emails";
+//            ResultSet rs = stmt.executeQuery(sql);
 
 
             out.println("<html> <body>");
 
 
-            while(rs.next()){
-                out.println(rs.getString("name"));
-                out.println(rs.getString("email"));
-                out.println("</br>");
-
-            }
+//            while(rs.next()){
+//                out.println(rs.getString("name"));
+//                out.println(rs.getString("email"));
+//                out.println("</br>");
+//
+//            }
             out.println("</body> </html>");
-
-        } catch (ClassNotFoundException | SQLException e){
-            e.printStackTrace();
-        }
+//
+//        } catch (ClassNotFoundException | SQLException e){
+//            e.printStackTrace();
+//        }
 
     }
 }
