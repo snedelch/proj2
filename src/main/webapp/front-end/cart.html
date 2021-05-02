@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Carlos Arteaga Ecommerce Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <script src="menu.js"> </script> -->
+    <script src="store.js"> async</script>
+
+</head>
+<body>
+    <div class = "container">
+        <div class = "navbar">
+            <div class = "logo">
+                <img src  = "images/ciarteagLogo.png" width = "190 px" >
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href = "/index.html"> Home </a> </li>
+                    <li> <a href = "/products.html"> Products </a> </li>
+                    <li> <a href = "/about.html"> About </a> </li>
+                </ul>
+            </nav>
+            <a href = "/cart.html" > <img src ="/images/cart.png" width = "30px" height = "30px"></a>
+            <img src ="/images/menu.png" class = "menu-symbol" onclick="menutoggle()" >
+            
+        </div>
+    </div>
+
+    <!-- -------cart item details---- -->
+    <div class = "small-container cart-page"> 
+        <table>
+            <tr>
+                <th> Product</th>
+                <th> Quantity</th>
+                <th> Subtotal</th>
+            </tr>
+            <tr>
+                <td> 
+                    <div class = " cart-info">
+                        <img src = "/images/shoe1M.webp">
+                        <div> 
+                            <p> Tanjiro/Tomioka AF1's</p>
+                            <small> Price: $50.00</small>
+                            <br>
+                            <a href ="" class = "remove">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td> <input type= "number" value= "1"></td>
+                <td> $230</td>
+
+            </tr>
+        </table>
+    </div>
+
+    <!-- ---subtotal--- -->
+    <div class ="totalPrice">
+        <table>
+            <tr>
+                <td> Subtotal</td>
+                <td> $230.00</td>
+            </tr>
+            <tr>
+                <td> Tax</td>
+                <td> $10.00</td>
+            </tr>
+            <tr>
+                <td> Total</td>
+                <td> $240.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class = "footer">
+        <!-- <div class = "container"> -->
+            <p class = "copyright"> Copyright 2021 - Carlos Arteaga</p>
+        <!-- </div> -->
+    </div>
+
+    <script src="menu.js"></script>
+
+</body>
+
+
+
+</html>

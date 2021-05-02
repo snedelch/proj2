@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Arteaga Ecommerce Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="menu.js"> </script> -->
+</head>
+<body>
+<div class = "header">
+
+    <div class = "container">
+        <div class = "navbar">
+            <div class = "logo">
+                <img src  = "images/ciarteagLogo.png" width = "190 px" >
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href = "/index.html"> Home </a> </li>
+                    <li> <a href = "/products.html"> Products </a> </li>
+                    <li> <a href = "/about.html"> About </a> </li>
+                </ul>
+            </nav>
+            <a href = "/cart.html" > <img src ="/images/cart.png" width = "30px" height = "30px"></a>
+            <img src ="/images/menu.png" class = "menu-symbol" onclick="menutoggle()" >
+            
+        </div>
+        <div class = "row">
+            <div class = "col-2">
+                <h1>
+                    Add style <br> to your kicks!
+                </h1>
+                <p> Show off your favorite anime characters! <br> Browse from many different artists!</p>
+                <a href= "/products.html" class = "btn"> Explore Now &#8594 </a>
+            </div>
+            <div class = "col-2">
+                <img src = "images/plainShoe2.png" class = "rotate" alt = "White Nike Shoe with anime drawing on side" >
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class = "small-container">
+        <h2 class = "title"> Featured Products</h2>
+        <div class = "row">
+            <div class = "col-3"> 
+                <a href="product-detail.html">
+                    <img src = "images/shoe1M.webp" alt= "Demon Slayer Air Force 1's">
+                    <h4> Tanjiro/Tomioka AF1's</h4>
+                </a>                
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <i> (13 reviews)</i>
+                <p> $320</p>
+            </div>    
+            <div class = "col-3"> 
+                <a href="product-detail.html">
+                    <img src = "images/shoe2M.webp" alt= "Shinobu Air Force 1's">
+                    <h4> Shinobu AF1's</h4>
+                </a>                
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star-empty.png" >
+                <i> (7 reviews)</i>
+                <p> $250</p>
+            </div>   
+            <div class = "col-3"> 
+                <a href="product-detail.html">
+                    <img src = "images/shoe3M.webp" alt= "Killua Air Force 1's">
+                    <h4> Killua Airforce 1's </h4>
+                </a>                
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star.png" >
+                <img class = "star" src ="images/star-empty.png" >
+                <i> (20 reviews)</i>
+                <p> $320 </p>
+            </div>   
+        </div>
+
+    </div>
+
+    <div class = "footer">
+        <!-- <div class = "container"> -->
+            <p class = "copyright"> Copyright 2021 - Carlos Arteaga</p>
+        <!-- </div> -->
+    </div>
+    <script src="menu.js"></script>
+    <script src="gallery.js"> </script>
+    <script src="store.js"> </script>
+
+
+</body>
+
+
+
+</html>
