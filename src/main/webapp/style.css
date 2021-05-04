@@ -8,6 +8,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.topFives{
+    max-width:1200px;
+    margin: 0 auto;
+    display:grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
 
 .navbar{
     display:flex;
@@ -221,6 +231,9 @@ select{
 
 /* media query for menu*/
 @media only screen and (max-width: 800px){
+    .topFives{
+        grid-template-columns: repeat(2, 1fr);
+    }
     nav ul{
         position: absolute;
         top: 70px;
@@ -248,6 +261,9 @@ select{
 }
 /* media query for less than 600 screen size*/
 @media only screen and (max-width: 600px){
+    .topFives{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .row{
         text-align: center;
     }
