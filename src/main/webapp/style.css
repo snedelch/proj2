@@ -424,7 +424,7 @@ td:last-child{
     margin: 0 -16px;
   }
 
-  input[type=text],select, input[type=number] {
+  input[type=text],select, input[type=number], input[type=email] {
     width: 100%;
     margin-bottom: 20px;
     padding: 12px;
