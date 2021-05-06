@@ -1,4 +1,4 @@
-package inf124.proj2;
+package inf124.proj2.temp;
 
 //References: https://stackoverflow.com/questions/36375143/how-to-output-an-image-on-file-as-an-html-img-from-a-java-servlet/36377224
 

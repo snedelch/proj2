@@ -1,4 +1,4 @@
-package inf124.proj2;
+package inf124.proj2.temp;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

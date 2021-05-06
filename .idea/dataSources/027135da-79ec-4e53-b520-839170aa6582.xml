@@ -901,134 +901,158 @@ SELECT|sys.sys_config
       <ObjectGrants>SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,RELOAD,SHUTDOWN,PROCESS,FILE,REFERENCES,INDEX,ALTER,SHOW DATABASES,SUPER,CREATE TEMPORARY TABLES,LOCK TABLES,EXECUTE,REPLICATION SLAVE,REPLICATION CLIENT,CREATE VIEW,SHOW VIEW,CREATE ROUTINE,ALTER ROUTINE,CREATE USER,EVENT,TRIGGER,CREATE TABLESPACE,CREATE ROLE,DROP ROLE!
 </ObjectGrants>
     </user>
-    <table id="282" parent="2" name="emails"/>
-    <table id="283" parent="2" name="image"/>
-    <table id="284" parent="2" name="orders"/>
-    <table id="285" parent="2" name="product"/>
-    <table id="286" parent="2" name="user"/>
-    <column id="287" parent="282" name="id">
+    <table id="282" parent="2" name="cart"/>
+    <table id="283" parent="2" name="emails"/>
+    <table id="284" parent="2" name="image"/>
+    <table id="285" parent="2" name="orders"/>
+    <table id="286" parent="2" name="product"/>
+    <table id="287" parent="2" name="user"/>
+    <column id="288" parent="282" name="cart_id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="288" parent="282" name="name">
+    <column id="289" parent="282" name="session">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="289" parent="282" name="email">
+    <column id="290" parent="282" name="product_id">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <key id="290" parent="282" name="PRIMARY">
+    <key id="291" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>cart_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="292" parent="283" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="293" parent="283" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="294" parent="283" name="email">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <key id="295" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="291" parent="283" name="id">
+    <column id="296" parent="284" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="292" parent="283" name="file">
+    <column id="297" parent="284" name="file">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="293" parent="283" name="img_id">
+    <column id="298" parent="284" name="img_id">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <key id="294" parent="283" name="PRIMARY">
+    <key id="299" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="295" parent="284" name="order_id">
+    <column id="300" parent="285" name="order_id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="296" parent="284" name="email">
+    <column id="301" parent="285" name="email">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="297" parent="284" name="product_id">
+    <column id="302" parent="285" name="product_id">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="298" parent="284" name="time">
+    <column id="303" parent="285" name="time">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <key id="299" parent="284" name="PRIMARY">
+    <column id="304" parent="285" name="session">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <key id="305" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>order_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="300" parent="285" name="id">
+    <column id="306" parent="286" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="301" parent="285" name="name">
+    <column id="307" parent="286" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="302" parent="285" name="price">
+    <column id="308" parent="286" name="price">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="303" parent="285" name="description">
+    <column id="309" parent="286" name="description">
       <Position>4</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="304" parent="285" name="image_id">
+    <column id="310" parent="286" name="image_id">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="305" parent="285" name="rating">
+    <column id="311" parent="286" name="rating">
       <Position>6</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="306" parent="285" name="img_file">
+    <column id="312" parent="286" name="img_file">
       <Position>7</Position>
       <DataType>text|0s</DataType>
     </column>
-    <key id="307" parent="285" name="PRIMARY">
+    <key id="313" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="308" parent="286" name="id">
+    <column id="314" parent="287" name="id">
       <Position>1</Position>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="309" parent="286" name="username">
+    <column id="315" parent="287" name="username">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="310" parent="286" name="lname">
+    <column id="316" parent="287" name="lname">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="311" parent="286" name="email">
+    <column id="317" parent="287" name="email">
       <Position>4</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="312" parent="286" name="pass">
+    <column id="318" parent="287" name="pass">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="313" parent="286" name="fname">
+    <column id="319" parent="287" name="fname">
       <Position>6</Position>
       <DataType>text|0s</DataType>
     </column>
-    <key id="314" parent="286" name="PRIMARY">
+    <key id="320" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
